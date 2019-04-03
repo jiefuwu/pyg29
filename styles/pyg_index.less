@@ -5,11 +5,82 @@
   height: 100vh;
   max-width: 640px;
   background-color: #ccc;
+  display: flex;
+   flex-direction: column;
   .pyg_header{
     padding: 5px;
+    height: 40px;
+    width: 100%;
     .mui-search {
       height: 30px;
+      line-height: 40px;
     }
   }
-
+  .pyg_content{
+    overflow: scroll;
+    flex: 1;
+    margin-bottom: 50px;
+  }
+  .pyg_cp{
+    width: 100%;
+    overflow: hidden;
+    .pyg_cpk{
+      width: 100%;
+      padding: 10px 10px 4px;
+      float: left;
+      >img{
+        width: 100%;
+        display: block;
+      }
+      >.pyg_cpxk{
+        margin-top: 10px;
+        width: 50%;
+        background-color: #fff;
+        padding: 6px;
+        float: left;
+        img{
+          width: 100%;
+          display: block;
+        }
+        div{
+          color: rgb(83, 79, 79);
+          font-size: 13px;
+        }
+        .pyg_zigd {
+          height: 40px;
+        }
+        div:nth-last-of-type(1){
+          color: red;
+          font-size: 20px;
+          padding: 10px 0;
+        }
+        span{
+          display: block;
+          width: 130px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .pyg_nav{
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    >a{
+      display: block;
+      width: 25%;
+      float: left;
+      text-align: center;
+      color: rgb(63, 60, 60);
+      font-size: 13px;;
+      >img{
+        width: 50%;
+        display: inline-block;
+      }
+    }
+  }
+  .pyg_footer{
+    height: 50px;
+  }
 }

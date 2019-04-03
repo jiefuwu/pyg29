@@ -96,10 +96,82 @@ ul {
   height: 100vh;
   max-width: 640px;
   background-color: #ccc;
+  display: flex;
+  flex-direction: column;
 }
 .layout .pyg_header {
   padding: 5px;
+  height: 40px;
+  width: 100%;
 }
 .layout .pyg_header .mui-search {
   height: 30px;
+  line-height: 40px;
+}
+.layout .pyg_content {
+  overflow: scroll;
+  flex: 1;
+  margin-bottom: 50px;
+}
+.layout .pyg_cp {
+  width: 100%;
+  overflow: hidden;
+}
+.layout .pyg_cp .pyg_cpk {
+  width: 100%;
+  padding: 10px 10px 4px;
+  float: left;
+}
+.layout .pyg_cp .pyg_cpk > img {
+  width: 100%;
+  display: block;
+}
+.layout .pyg_cp .pyg_cpk > .pyg_cpxk {
+  margin-top: 10px;
+  width: 50%;
+  background-color: #fff;
+  padding: 6px;
+  float: left;
+}
+.layout .pyg_cp .pyg_cpk > .pyg_cpxk img {
+  width: 100%;
+  display: block;
+}
+.layout .pyg_cp .pyg_cpk > .pyg_cpxk div {
+  color: #534f4f;
+  font-size: 13px;
+}
+.layout .pyg_cp .pyg_cpk > .pyg_cpxk .pyg_zigd {
+  height: 40px;
+}
+.layout .pyg_cp .pyg_cpk > .pyg_cpxk div:nth-last-of-type(1) {
+  color: red;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.layout .pyg_cp .pyg_cpk > .pyg_cpxk span {
+  display: block;
+  width: 130px;
+  margin: 0 auto;
+}
+.layout .pyg_nav {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.layout .pyg_nav > a {
+  display: block;
+  width: 25%;
+  float: left;
+  text-align: center;
+  color: #3f3c3c;
+  font-size: 13px;
+}
+.layout .pyg_nav > a > img {
+  width: 50%;
+  display: inline-block;
+}
+.layout .pyg_footer {
+  height: 50px;
 }

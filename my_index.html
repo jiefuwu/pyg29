@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
-  <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="./styles/pyg_index.css">
+  <link rel="stylesheet" href="./lib/mui/css/mui.css">
   <title>Document</title>
 </head>
 
@@ -19,6 +20,7 @@
       </div>
     </div>
     <div class="pyg_content">
+      <!-- 轮播图 -->
       <div class="bannder">
         <div class="mui-slider">
           <div class="mui-slider-group mui-slider-loop pyg_tu">
@@ -29,8 +31,32 @@
           </div>
         </div>
       </div>
+
+      <div class="pyg_nav clearfix">
+        <a href="">
+          <img src="https://image2.suning.cn/uimg/cms/img/155411189774023862.gif?format=_is_120w_120h" alt="">
+          <div>爆款手机</div>
+        </a>
+        <a href="">
+          <img src="https://image1.suning.cn/uimg/cms/img/154708800857670247.png?format=_is_120w_120h.webp" alt="">
+          <div>苏宁超市</div>
+        </a>
+        <a href="">
+          <img src="https://image1.suning.cn/uimg/cms/img/155175138228120594.png?format=_is_120w_120h.webp" alt="">
+          <div>生活超市</div>
+        </a>
+        <a href="">
+          <img src="https://image2.suning.cn/uimg/cms/img/154708804944582613.png?format=_is_120w_120h.webp" alt="">
+          <div>苏宁生鲜</div>
+        </a>
+      </div>
+
+      <!-- 产品块 -->
+      <div class="pyg_cp">
+        
+      </div>
+
     </div>
-    <div class="pyg_footter">
       <nav class="mui-bar mui-bar-tab">
         <a class="mui-tab-item mui-active" href="#tabbar">
           <span class="mui-icon mui-icon-home"></span>
@@ -41,7 +67,7 @@
           <span class="mui-tab-label">分类</span>
         </a>
         <a class="mui-tab-item" href="#tabbar-with-contact">
-          <span class="mui-icon mui-icon-contact"></span>
+          <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
           <span class="mui-tab-label">购物车</span>
         </a>
         <a class="mui-tab-item" href="#tabbar-with-map">
@@ -49,7 +75,6 @@
           <span class="mui-tab-label">我的</span>
         </a>
       </nav>
-    </div>
   </div>
 
   <script type="text/template" id="pyg_bannerTemp">
@@ -60,7 +85,7 @@
     </div>
     {{each data value index}}
       <div class="mui-slider-item">
-      <a href="value.navigator_url">
+      <a href="{{value.navigator_url}}">
      <img src="{{value.image_src}}">
     </a>   
     </div>
@@ -71,14 +96,36 @@
    </a>
  </div>
   </script>
+
   <script type="text/template" id="pyg_bannerIndex">
     {{each data value index}}
     <div class="mui-indicator {{index==0?'mui-active':''}}"></div>
     {{/each}}
   </script>
+
+
+ <script type="text/template" id="pyg_cpks">
+    {{each data value index}}
+    <div class="pyg_cpk">
+      <img src="{{value.group_img}}" alt="">
+      {{each value.goods v i}}
+      <div class="pyg_cpxk">
+        <a href="">
+          <img src="{{v.goods_small_logo}}" alt="">
+          <div class="mui-ellipsis-2">{{v.goods_name}}</div>
+          <div class="pyg_zigd">￥ {{v.goods_price}}</div>
+          <span type="button" class="mui-btn mui-btn-primary mui-btn-outlined">查看相似</span>
+        </a>
+      </div>
+      {{/each}}
+    </div>
+    {{/each}}
+  </script>
+
   <script src="./lib/mui/js/mui.js"></script>
   <script src="./lib/zepto/zepto.js"></script>
   <script src="./lib/arttemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
   <script src="./js/pyg_index.js"></script>
 </body>
 
