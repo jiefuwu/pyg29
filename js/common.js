@@ -5,9 +5,9 @@ $(function () {
   // beforeSend是请求发送时处理事件
   $.ajaxSettings.beforeSend=function (xhr,obj) {
     // xhr是异步对象
-    console.log(xhr);
+    // console.log(xhr);
     // obj是请求对象.内包含发送到服务器的请求的数据
-    console.log(obj);
+    // console.log(obj);
     // 把请求对象中的路径进行拼接后重新赋值
     obj.url=baseURL+obj.url
   }
