@@ -1,6 +1,6 @@
 $(function () {
   // 定义一个不可变变量。用来储存拼接路径的前部分
-  const baseURL = 'http://157.122.54.189:9094/api/public/v1/'
+  const baseURL = 'http://140.143.222.79:8899/api/public/v1/'
   // 添加zepto拦截器，每个ajax请求都要经过拦截器
   // beforeSend是请求发送时处理事件
   $.ajaxSettings.beforeSend=function (xhr,obj) {
@@ -14,4 +14,7 @@ $(function () {
   $.ajaxSettings.complete=function () {
     
   }
+  mui('body').on('tap', 'a', function () {
+    window.top.location.href = this.href;
+  });
 })

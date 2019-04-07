@@ -1,9 +1,7 @@
 $(function () {
 pyg_lbt()
 pyg_cpk()
- mui('body').on('tap', 'a', function () {
-   window.top.location.href = this.href;
- });
+ 
 })
 function pyg_lbt() {
    $.ajax({
