@@ -1,0 +1,168 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+.layout {
+  display: flex;
+}
+.layout header {
+  height: 45px;
+}
+.layout .pyg_content {
+  flex: 1;
+  width: 100%;
+}
+.layout .pyg_content .mui-scroll {
+  padding-bottom: 55px;
+  background-color: #fff;
+}
+.layout .pyg_content .mui-scroll .pyg_details {
+  padding: 0 6px;
+}
+.layout .pyg_content .mui-scroll .pyg_details > div:nth-of-type(1) {
+  font-size: 14px;
+  color: #222;
+  padding: 10px 0;
+}
+.layout .pyg_content .mui-scroll .pyg_details > div:nth-of-type(2) {
+  font-size: 18px;
+  color: orange;
+  padding-bottom: 20px;
+}
+.layout .pyg_content .mui-scroll .pyg_details .dizs {
+  display: flex;
+  border-bottom: 1px solid #333;
+  font-size: 14px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  margin-bottom: 6px;
+}
+.layout .pyg_content .mui-scroll .pyg_details .dizs span:nth-of-type(1) {
+  flex: 1;
+  color: #ccc;
+}
+.layout .pyg_content .mui-scroll .pyg_details .dizs span:nth-of-type(2) {
+  flex: 3;
+  color: #333;
+}
+.layout .pyg_content .mui-scroll #item2 li {
+  padding: 5px 0 0 0;
+}
+.layout .pyg_content .mui-scroll #item2 li h3 {
+  font-size: 16px;
+  color: #444;
+  border: none;
+  border-bottom: 1px solid #222;
+  padding: 5px 0;
+}
+.layout .pyg_content .mui-scroll #item2 li > div {
+  display: flex;
+  font-size: 12px;
+  padding: 5px 0;
+}
+.layout .pyg_content .mui-scroll #item2 li > div span:nth-of-type(1) {
+  flex: 1;
+}
+.layout .pyg_content .mui-scroll #item2 li > div span:nth-of-type(2) {
+  flex: 3;
+}
+.layout nav {
+  height: 50px;
+}
+.layout nav > a > button,
+.layout nav > p > button {
+  height: 40px;
+  width: 98%;
+  border: none;
+  border: 1px solid #fff;
+}

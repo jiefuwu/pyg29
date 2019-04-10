@@ -45,12 +45,14 @@ $(function () {
         callback: function () { //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
           data.pagenum++
           request(function (result) {
+            
             if (result.data.goods.length > 0) {
               var html = template('goodslits', result.data)
               $('.mui-table-view-chevron').append(html)
               mui('#refreshContainer').pullRefresh().endPullupToRefresh();
             } else {
               mui('#refreshContainer').pullRefresh().endPullupToRefresh(true);
+              
             }
           })
 

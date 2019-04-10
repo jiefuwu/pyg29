@@ -10,6 +10,10 @@ $(function () {
     // console.log(obj);
     // 把请求对象中的路径进行拼接后重新赋值
     obj.url=baseURL+obj.url
+    if (obj.url.indexOf('/my/')!==-1) {
+      xhr.setRequestHeader('Authorization', sessionStorage.getItem('pyg_token'))
+      
+    }
   }
   $.ajaxSettings.complete=function () {
     

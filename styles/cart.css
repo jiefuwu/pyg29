@@ -1,0 +1,184 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+.layout .pyg_content {
+  padding: 45px 10px 50px;
+}
+.layout .pyg_content > div > h4 {
+  font-size: 13px;
+  color: #666;
+  padding: 15px 0 5px;
+}
+.layout .pyg_content > div > div {
+  background-color: #fff;
+}
+.layout .pyg_content .pyg_site > div {
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  display: flex;
+}
+.layout .pyg_content .pyg_site > div span {
+  padding-top: 10px;
+}
+.layout .pyg_content .pyg_site > div > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.layout .pyg_content .pyg_site > div > div p {
+  padding: 3px 0;
+  margin-left: 8px;
+}
+.layout .pyg_content .pyg_site > div > div p:nth-of-type(1) {
+  font-size: 13px;
+  color: #222;
+}
+.layout .pyg_content .pyg_site > div > div p:nth-of-type(2) {
+  font-size: 11px;
+  color: #666;
+}
+.layout .pyg_content .pyg_price > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 6px;
+}
+.layout .pyg_content .pyg_price > div > a {
+  font-size: 13px;
+}
+.layout .pyg_content .pyg_price > div > span span {
+  color: red;
+  font-weight: 600;
+}
+.layout .pyg_content .order .pyg_order > div {
+  display: flex;
+  justify-content: center;
+  margin: 4px 0;
+}
+.layout .pyg_content .order .pyg_order > div > .mui-input-row {
+  flex: 2;
+  width: 100%;
+}
+.layout .pyg_content .order .pyg_order > div > .mui-input-row input {
+  margin-top: 50%;
+  margin-left: -5px;
+}
+.layout .pyg_content .order .pyg_order > div > .pyg_img {
+  width: 100%;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.layout .pyg_content .order .pyg_order > div > .pyg_img img {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  display: block;
+}
+.layout .pyg_content .order .pyg_order > div > .pyg_qq {
+  width: 100%;
+  flex: 6;
+}
+.layout .pyg_content .order .pyg_order > div > .pyg_qq p {
+  font-size: 13px;
+}
+.layout .pyg_content .order .pyg_order > div > .pyg_qq h3 {
+  font-size: 16px;
+}
+.classes .delete {
+  display: none;
+}
+.classes .mui-checkbox {
+  display: none;
+}
